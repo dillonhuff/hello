@@ -24,7 +24,7 @@ add_definitions(${Qt5Widgets_DEFINITIONS})
 # without -fPIE. We add that here.
 set(CMAKE_CXX_FLAGS "${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
 
-add_executable(hello_world main.cpp mainwindow.cpp)
+add_executable(hello_world main.cpp window.cpp)
 
 # The Qt5Widgets_LIBRARIES variable also includes QtGui and QtCore
 target_link_libraries(hello_world ${Qt5Widgets_LIBRARIES})
